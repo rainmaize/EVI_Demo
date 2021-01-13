@@ -54,7 +54,7 @@ namespace mvc.Controllers
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("ID,NUMBER_EMPLOYEE,POSSION,dateTime,SALARY,DESCRIPTION")] Recruitment_plan recruitment_plan)
+        public async Task<IActionResult> Create([Bind("ID,NUMBER_EMPLOYEE,POSSION_ID,dateTime,SALARY,DESCRIPTION")] Recruitment_plan recruitment_plan)
         {
             if (ModelState.IsValid)
             {
@@ -86,7 +86,7 @@ namespace mvc.Controllers
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("ID,NUMBER_EMPLOYEE,POSSION,dateTime,SALARY,DESCRIPTION")] Recruitment_plan recruitment_plan)
+        public async Task<IActionResult> Edit(int id, [Bind("ID,NUMBER_EMPLOYEE,POSSION_ID,dateTime,SALARY,DESCRIPTION")] Recruitment_plan recruitment_plan)
         {
             if (id != recruitment_plan.ID)
             {

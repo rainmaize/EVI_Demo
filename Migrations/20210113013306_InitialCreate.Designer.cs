@@ -10,7 +10,7 @@ using mvcbasic.Data;
 namespace mvc.Migrations
 {
     [DbContext(typeof(MvcBasicDbContext))]
-    [Migration("20210112091816_InitialCreate")]
+    [Migration("20210113013306_InitialCreate")]
     partial class InitialCreate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -52,8 +52,8 @@ namespace mvc.Migrations
                     b.Property<int>("NUMBER_EMPLOYEE")
                         .HasColumnType("int");
 
-                    b.Property<string>("POSSION")
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<int>("POSSION_ID")
+                        .HasColumnType("int");
 
                     b.Property<int>("SALARY")
                         .HasColumnType("int");

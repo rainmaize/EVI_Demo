@@ -28,7 +28,7 @@ namespace mvc.Migrations
                     ID = table.Column<int>(nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     NUMBER_EMPLOYEE = table.Column<int>(nullable: false),
-                    POSSION = table.Column<string>(nullable: true),
+                    POSSION_ID = table.Column<int>(nullable: false),
                     dateTime = table.Column<DateTime>(nullable: false),
                     SALARY = table.Column<int>(nullable: false),
                     DESCRIPTION = table.Column<string>(nullable: true)

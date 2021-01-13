@@ -11,7 +11,7 @@ namespace mvc.Models
         public int ID {get ; set ;}
         public int NUMBER_EMPLOYEE { get; set; }
 
-        public string POSSION {get;set;}
+        public int POSSION_ID {get;set;}
 
         public DateTime dateTime {get; set;}
 

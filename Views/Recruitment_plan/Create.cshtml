@@ -17,16 +17,15 @@
                 <input asp-for="NUMBER_EMPLOYEE" class="form-control" />
                 <span asp-validation-for="NUMBER_EMPLOYEE" class="text-danger"></span>
             </div>
-             <div class="form-group">
-                <label asp-for="POSSION" class="control-label"></label>
-                <select asp-for="POSSION" class="form-control">
-  <option value="volvo">Volvo</option>
-  <option value="saab">Saab</option>
-  <option value="mercedes">Mercedes</option>
-  <option value="audi">Audi</option>
+            <div class="form-group">
+                <label asp-for="POSSION_ID" class="control-label">POSSION</label>
+                            <select asp-for="POSSION_ID" class="form-control">
+  <option value="1">Kinh Doanh</option>
+  <option value="2">Saab</option>
+  <option value="3">Mercedes</option>
+  <option value="4">Audi</option>
 </select>
-               
-                <span asp-validation-for="POSSION" class="text-danger"></span>
+                <span asp-validation-for="POSSION_ID" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="dateTime" class="control-label"></label>

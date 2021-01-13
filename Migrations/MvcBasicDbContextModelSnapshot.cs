@@ -50,8 +50,8 @@ namespace mvc.Migrations
                     b.Property<int>("NUMBER_EMPLOYEE")
                         .HasColumnType("int");
 
-                    b.Property<string>("POSSION")
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<int>("POSSION_ID")
+                        .HasColumnType("int");
 
                     b.Property<int>("SALARY")
                         .HasColumnType("int");
