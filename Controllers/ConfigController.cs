@@ -62,7 +62,9 @@ namespace mvc.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
+         
             return View(config);
+         
         }
 
         // GET: Config/Edit/5
@@ -91,6 +93,7 @@ namespace mvc.Controllers
             if (id != config.ID)
             {
                 return NotFound();
+                
             }
 
             if (ModelState.IsValid)
@@ -99,6 +102,7 @@ namespace mvc.Controllers
                 {
                     _context.Update(config);
                     await _context.SaveChangesAsync();
+                    
                 }
                 catch (DbUpdateConcurrencyException)
                 {

@@ -71,6 +71,7 @@ namespace mvc.Controllers
             if (id == null)
             {
                 return NotFound();
+                
             }
 
             var recruitment_plan = await _context.Recruitment_Plans.FindAsync(id);
